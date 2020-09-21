@@ -1,4 +1,4 @@
-from conta import cria_conta, deposita, saca, extrato
+from conta2 import cria_conta, deposita, saca, extrato
 
 
 conta = cria_conta(123, "Nico", 55.0, 1000.0)
