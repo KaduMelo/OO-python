@@ -1,11 +1,14 @@
-from conta2 import cria_conta, deposita, saca, extrato
+from conta import Conta
 
+conta = Conta(123, "Kadu", 55.0, 1000.0)
+conta2 = Conta(456, "Carlos", 150.0, 2000.0)
 
-conta = cria_conta(123, "Nico", 55.0, 1000.0)
-print(conta)
+conta.extrato()
 
-deposita(conta, 15.0)
-extrato(conta)
+conta.transfere(50, conta2)
 
-saca(conta, 20.0)
-extrato(conta)
+conta.extrato()
+conta2.extrato()
+
+conta2.saca(50)
+conta2.extrato()
